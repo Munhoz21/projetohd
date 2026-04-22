@@ -1,0 +1,116 @@
+/* reset CSS */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+    --color-light:#f4f4f4;
+    --color-orange:#ff6600;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    
+} 
+
+a{
+    color: var(--color-light);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .5s;
+}
+
+a:hover{
+    color: var(--color-orange);
+    
+}
+
+ul, ol{
+    list-style: none;
+}
+
+
+/* hero da página */
+.hero {
+    height: 100dvh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .3)),
+    url(../motos/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--color-light);
+}
+
+.header-hero{
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-inline: 20px;
+}
+
+.hero-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.cta{
+    height: calc(100dvh - 100px);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.cta h2{
+    font-size: 10vmin;
+}
+
+.cta p{
+    width:50%;
+    font-size: 3vmin;
+    font-weight: 500;
+    line-height: 1.6;
+    text-wrap: balance;
+}
+
+.btn{
+    border:2px solid var(--color-orange);
+    background-color: var(--color-orange);
+    padding:  10px 30px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: transparent;
+}
+
+.setinha{
+    animation: arrow 1.5s infinite linear;
+}
+
+/* Animação da seta */
+@keyframes arrow {
+    0%,
+    100%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+}
+
+.motos, .conheca, .galeria {
+    height: 100dvh;
+}
+
