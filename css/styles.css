@@ -8,6 +8,10 @@
 :root{
     --color-light:#f4f4f4;
     --color-orange:#ff6600;
+    --color-dark:#111111;
+    --spacing-sm:10px;
+    --spacing-md:20px;
+    --spacing-lg:30px;
 }
 
 html {
@@ -16,6 +20,7 @@ html {
 
 body{
     font-family: "Quicksand", sans-serif;
+    background-color: var(--color-dark);
     
 } 
 
@@ -53,12 +58,12 @@ ul, ol{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding-inline: 20px;
+    padding-inline: var(--spacing-md);
 }
 
 .hero-menu {
     display: flex;
-    gap: 20px;
+    gap: var(--spacing-md);
 }
 
 .cta{
@@ -67,7 +72,7 @@ ul, ol{
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: var(--spacing-lg);
     text-align: center;
 }
 
@@ -86,8 +91,8 @@ ul, ol{
 .btn{
     border:2px solid var(--color-orange);
     background-color: var(--color-orange);
-    padding:  10px 30px;
-    border-radius: 20px;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: 80px;
     transition: .5s;
 }
 
@@ -110,7 +115,38 @@ ul, ol{
     }
 }
 
-.motos, .conheca, .galeria {
+.motos{
+    height: 100dvh;
+    width: 90%;
+    padding: var(--spacing-md);
+    background-color: var(--color-dark);
+    color:var(--color-light);
+    margin:var(--spacing-sm) auto ;
+}
+
+.grid-motos{
+
+}
+
+.moto-item{
+    width: 30%;
+}
+
+.moto-item img{
+    width: 100%;
+}
+
+.motos h2{
+    font-size: 8vmin;
+}
+
+.color-orange{
+    color: var(--color-orange);
+}
+
+.conheca, .galeria {
     height: 100dvh;
 }
+
+
 
